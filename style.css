@@ -1,0 +1,596 @@
+/*adding the background*/
+body,html {
+    background-image: url(".//images1/Background.png");
+    background-color: #F2F2F0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*style navigation bar*/
+.flex-container > header, nav, img, switch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+ /*LOGO*/
+header img {
+    height: 180px;
+    margin-top: 50px;
+    margin-left: -15px;
+    align-items: center;
+    position: fixed;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Myanmar Text;
+    font-size: 27px;
+    position: fixed;
+    align-items: center;
+
+    margin-left: 120px;
+    margin-top: 80px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #000000;
+    opacity: 70%;
+    text-align: center;
+    padding: 0px 100px;
+    text-decoration: none;
+    margin-left: 0px;
+  }
+
+  /*language switch button*/
+
+  .switch {
+    position: fixed;
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 1350px;
+  }
+  
+  .switch > span {
+    position: absolute;
+    top: 14px;
+    pointer-events: none;
+    font-family: Myanmar Text;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+    width: 50%;
+    text-align: center;
+  }
+  
+  input.check-toggle-round-flat:checked ~ .off {
+    color: black;
+    opacity: 70%;
+  }
+  
+  input.check-toggle-round-flat:checked ~ .on {
+    color: #fff;
+  }
+  
+  .switch > span.on {
+    left: 0;
+    padding-left: 2px;
+    color: black;
+    opacity: 70%;
+  }
+  
+  .switch > span.off {
+    right: 0;
+    padding-right: 4px;
+    color: #fff;
+  }
+  
+  .check-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  .check-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  input.check-toggle-round-flat + label {
+    padding: 5px;
+    width: 100px;
+    height: 45px;
+    background-color: white;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+  }
+  input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+  }
+  
+  input.check-toggle-round-flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #A6CDF7;
+    
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+  }
+  input.check-toggle-round-flat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 58px;
+    background-color: white;
+    -webkit-border-radius: 52px;
+    -moz-border-radius: 52px;
+    -ms-border-radius: 52px;
+    -o-border-radius: 52px;
+    border-radius: 52px;
+    -webkit-transition: margin 0.2s;
+    -moz-transition: margin 0.2s;
+    -o-transition: margin 0.2s;
+    transition: margin 0.2s;
+  }
+  
+  input.check-toggle-round-flat:checked + label:after {
+    margin-left: 44px;
+  }
+
+  /*Style the transparent heading*/
+  
+  #heading1 {
+    font-family: Elephant;
+    font-weight: 100;
+    font-size: 120px;
+
+    color: #000000;
+    opacity: 40%;
+
+    text-align: right;
+   
+
+    margin-left: 50px;
+    margin-right: 750px;
+    margin-top: 200px;
+  }
+
+  #heading2 {
+    font-family: Elephant;
+    font-weight: 100;
+    font-size: 120px;
+
+    color: rgb(0, 0, 0);
+    mix-blend-mode: soft-light;
+
+    text-align: left;
+   
+
+    margin-right: 50px;
+    margin-left: 760px;
+    margin-top: -389px;
+  }
+
+  /*style the first paragraphs*/
+  #firstH {
+    font-family: Microsoft Himalaya;
+    font-size: 60px;
+    font-weight: 100;
+
+    margin-top: 450px;
+    margin-left: 90px;
+  }
+
+  #firstP {
+    font-family: Microsoft Yi Baiti;
+    font-size: 40px;
+
+    margin-left: 90px;
+    margin-top: -40px;
+  }
+
+#photo1 {
+  float: right;
+  position: absolute;
+  flex-direction: row;
+
+  width: 300px;
+  height: 450px;
+
+  margin-top: -490px;
+  margin-left: 850px;
+}
+
+#photo2 {
+  flex-direction: column;
+  float: right;
+  width: 300px;
+  height: 450px;
+
+  margin-top: -550px;
+  margin-right: 150px;
+}
+
+/*this is the design element (box)*/
+#componentphoto1_2 {
+  float: right;
+  flex-direction: row;
+
+  width: 300px;
+  height: 450px;
+
+  margin-top: -620px;
+  margin-right: 80px;
+}
+
+/*Style button Learn More*/
+
+#LearnMore1 {
+  border-style: initial;
+  border: solid 4px;
+  border-color: white;
+  
+  background-color: #DDE2E8;
+  
+  font-family: Microsoft Himalaya;
+  font-size: 50px;
+
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: 125px;
+  margin-top: -20px;
+  
+}
+
+/*add grid layout to the discover cards*/
+.grid-container {
+  display: grid;
+}
+
+.grid-item:nth-child(1) {
+  grid-column: 1 / 2; /* spans the first column */
+  grid-row: 1 / 2; /* spans the first row */
+
+  margin-left: -20px;
+  margin-top: 50px;
+
+}
+.grid-item:nth-child(2) {
+  grid-column: 2 / 3; /* spans the second column */
+  grid-row: 1 / 2; /* spans the first row */
+
+  margin-left: -500px;
+  margin-top: 50px;
+}
+.grid-item:nth-child(3) {
+  grid-column: 3 / 4; /* spans the third column */
+  grid-row: 1 / 2; /* spans the first row */
+
+  margin-left: -620px;
+  margin-top: 50px;
+
+  float: left;
+  
+}
+
+/*style the second section*/
+#secondHeading {
+  grid-column: 4 / 5; /* spans the third column */
+  grid-row: 1 / 2; /* spans the first row */
+  font-family: Microsoft Himalaya;
+  font-weight: 100;
+  font-size: 60px;
+
+  
+  text-align: right;
+
+  position: absolute;
+  right: 0;
+  margin-right: 90px;
+  margin-top: -400px;
+}
+
+#LearnMore2 {
+  border-style: initial;
+  border: solid 4px;
+  border-color: white;
+  
+  background-color: transparent;
+  
+  font-family: Microsoft Himalaya;
+  font-size: 50px;
+
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  float: right;
+  margin-right: 85px;
+  margin-top: -200px;
+}
+
+#ThirdH {
+  font-family: Microsoft Himalaya;
+  font-weight: 100;
+  font-size: 60px;
+
+  position: relative;
+  top: 300px;
+  left: 45px;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  
+}
+
+/*style the cards*/
+.imgborder1, .imgborder2, .imgborder3, .imgborder4 {
+  pointer-events: none;
+  border-style: initial;
+  border: solid 0px;
+  border-color: white;
+  border-bottom: white solid 120px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.237);
+
+  height: auto;
+  width: 400px;
+}
+
+.imgborder1 {
+  margin-left: 40px;
+  margin-top: 400px;
+}
+
+.imgborder2 {
+  margin-left: 500px;
+  margin-top: -658px;
+}
+
+.imgborder3 {
+  float: right;
+  margin-right: 140px;
+  margin-top: -658px;
+}
+
+.imgborder4 {
+  float: right;
+  margin-right: -325px;
+  margin-top: -658px;
+}
+
+.cardContent1 {
+  margin-top: -115px;
+  margin-left: 70px;
+
+  font-family: Microsoft Himalaya;
+  font-size: 30px;
+}
+
+.cardContent2 {
+  margin-top: -115px;
+  margin-left: 530px;
+
+  font-family: Microsoft Himalaya;
+  font-size: 30px;
+}
+
+.cardContent3 {
+  margin-top: -120px;
+  float: right;
+  margin-right: 380px;
+  
+  font-family: Microsoft Himalaya;
+  font-size: 30px;
+}
+
+.cardContent4 {
+  position: absolute;
+  right: 0%;
+  margin-top: -120px;
+  margin-right: -125px;
+  
+  font-family: Microsoft Himalaya;
+  font-size: 30px;
+}
+
+/*style the footer*/
+footer {
+  background-color: #DDE2E8;
+  border: 2px solid #00000081;
+
+  width: 1520px;
+  margin-left: -8px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid: 200px;
+}
+
+#Hleftside {
+  grid-column: 2 / 3; 
+  grid-row: 1 / 2; 
+
+  font-family: Microsoft Himalaya;
+  font-size: 55px;
+  font-weight: 100;
+
+  margin-left: -50px;
+}
+
+#icon1 {
+  grid-column: 1 / 2; 
+  grid-row: 2 / 2; 
+
+  margin-left: 100px;
+  padding-bottom: 20px;
+}
+
+#icon2 {
+  grid-column: 1 / 2; 
+  grid-row: 3 / 3; 
+
+  margin-left: 100px;
+  padding-bottom: 20px;
+}
+
+#icon3 {
+  grid-column: 1 / 2; 
+  grid-row: 4 / 4; 
+  
+  margin-left: 100px;
+  padding-bottom: 20px;
+}
+
+#icon4 {
+  grid-column: 1 / 2; 
+  grid-row: 5 / 5; 
+
+  margin-left: 100px;
+  padding-bottom: 20px;
+}
+
+#text1 {
+  grid-column: 2 / 3; 
+  grid-row: 2 / 2; 
+
+  font-family: Microsoft Yi Baiti;
+  font-size: 30px;
+
+  margin-left: -50px;
+  margin-top: 10px;
+}
+
+#text2 {
+  grid-column: 2 / 3; 
+  grid-row: 3 / 3; 
+
+  font-family: Microsoft Yi Baiti;
+  font-size: 30px;
+
+  margin-left: -50px;
+  margin-top: 10px;
+}
+
+#text3 {
+  grid-column: 2 / 3; 
+  grid-row: 4 / 4; 
+
+  font-family: Microsoft Yi Baiti;
+  font-size: 30px;
+
+  margin-left: -50px;
+  margin-top: 10px;
+}
+
+#text4 {
+  grid-column: 2 / 3; 
+  grid-row: 5 / 5; 
+
+  font-family: Microsoft Yi Baiti;
+  font-size: 30px;
+
+  margin-left: -50px;
+  margin-top: 10px;
+}
+
+#logofooter {
+  grid-column: 3 / 4; 
+  grid-row: 1 / 4; 
+
+  margin-left: 10px;
+  margin-top: -50px;
+}
+
+#contactus {
+  grid-column: 3 / 4; 
+  grid-row: 4 / 4; 
+
+  border-style: initial;
+  color: white;
+  background-color: black;
+
+  width: 250px;
+
+  border-color: #000000;
+  border: solid 4px;
+  
+  font-family: Microsoft Himalaya;
+  font-size: 40px;
+
+  position: relative;
+
+}
+
+#Hrightside {
+  grid-column:  4 / 5; 
+  grid-row: 1/ 4;
+
+  font-family: Microsoft Himalaya;
+  font-size: 55px;
+  font-weight: 100;
+
+  position: absolute;
+  right: 0;
+  margin-right: 130px;
+}
+
+#icon5 {
+  grid-column: 5 / 5; 
+  grid-row: 3/ 4;
+
+  margin-right: -100px;
+
+  height: 70px;
+}
+
+#icon6 {
+  grid-column: 6 / 6; 
+  grid-row: 3/ 4;
+
+  margin-right: -100px;
+
+  height: 70px;
+}
+
+
+#icon7 {
+  grid-column: 7 / 7; 
+  grid-row: 3/ 4;
+
+  margin-right: -100px;
+
+  height: 70px;
+}

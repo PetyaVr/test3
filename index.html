@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <!--creating the menu and adding the logo using flexbox-->
+    <div class="flex-container">
+        <header>
+            <img src="..//Coding/images1/Logo.png" alt="Logo">
+            <nav>
+                <ul>
+                <li><a class="active" href="about.html">ABOUT</a></li>
+                <li><a href="errorpage.html">DISCOVER</a></li>
+                <li><a href="errorpage.html">BLOG</a></li>
+                <li><a href="errorpage.html">CONTACTS</a></li>
+                </ul>
+            </nav>
+             
+            <!--language switch button-->
+            <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                <label for="language-toggle"></label>
+                <span class="on">EN</span>
+                <span class="off">DK</span>
+              </div>
+        </header> 
+            <!--adding the big Welcome Heading-->
+        <div>
+            <h1 id="heading1">WELCO <br> HØJB</h1>
+            <h1 id="heading2"> ME TO JERG</h1>
+        </div>
+
+        <!--first heading with text plus photos using Flexbox-->
+        
+        <section>
+            <h2 id="firstH"> ALL YOU NEED TO KNOW <br> ABOUT HØJBJERG </h2>
+            <p id="firstP">The peaceful, leafy area and <br> former settlement of Højbjerg is <br> famous for the vast Marselisborg <br> Forest – a popular destination for <br> picnickers and cyclists – and for <br> the centuries-old trees around the <br> sandy Moesgård Beach. 
+                <br> And we are just a group of friends <br> who love to hang out in nature <br> together!</p>
+        </section>
+        
+        <div>
+            <img id="photo1" src="../Coding/images1/image 1 section 1.png" alt="Hojbjerg">
+            <img id="photo2" src="..//Coding/images1/image 2 section 1.png" alt="Hojbjerg">
+            <img id="componentphoto1_2" src="..//Coding/images1/Component photo 1&2.png" alt="Component">
+        </div>
+
+        <!--Connecting the button to the About page-->
+        <a href="about.html"> <button id="LearnMore1">LEARN MORE</button> </a>
+
+        <!--Second section: adding the icons, heading and button using Grid Container-->
+        <div class="grid-container">
+            <div class="grid-item"> <img src="..//Coding/images1/Explore Icon.png" alt="Explore Icon" style="height: 450px;"></div>
+            <div class="grid-item"> <img src="..//Coding/images1/Hidden Icon.png" alt="Hidden Icon" style="height: 450px;"></div>
+            <div class="grid-item"> <img src="..//Coding/images1/Places Icon.png" alt="Places Icon" style="height: 450px;"></div>
+            <div> <h2 id="secondHeading">DISCOVER THE MOST <br> ENGAGING PLACES</h2></div>
+        </div>
+
+        <!--Connecting the button the the Error page-->
+        <a href="errorpage.html"> <button id="LearnMore2">LEARN MORE</button> </a>
+            
+        </div>
+
+    </div>
+
+    <!--Creating the third section using Grid container again (adding the images and the text and also connecting them to the error page)-->
+    <h1 id="ThirdH">EXPLORE OUR MOST RECENT TOURS</h1>
+    <div class="container">
+        <div class="cards">
+            <div class="card"><a href="errorpage.html"></a>
+                <img class="imgborder1" src="..//Coding/images1/slider photo 1.png" alt="Infinity Bridge" />
+                <div class="cardContent1">
+                  <p>Infinity Bridge / <br> Den Uendelige Bro </p>
+              </div>
+            </div>
+            <div class="card"> <a href="errorpage.html"></a>
+              <img class="imgborder2" src="..//Coding/images1/slider photo 2.png" alt="Forrest Botanisk Have" />
+              <div class="cardContent2">
+                <p>Forrest Botanisk Have / <br> Forstbotanisk Have </p>
+              </div>
+            </div>
+            <div class="card"> <a href="errorpage.html"></a>
+              <img class="imgborder3" src="..//Coding/images1/slider photo 3.png" alt="Mountain peak" />
+              <div class="cardContent3">
+                <p> Mountain peak / <br> Jelshøj</p>
+              </div>
+            </div>
+            <div class="card"> <a href="errorpage.html"></a>
+              <img class="imgborder4" src="..//Coding/images1/slider photo 4.png" alt="Jutland Racecourse" />
+              <div class="cardContent4">
+                <p>Jutland Racecourse / <br> Jydsk Væddeløbsbane </p>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+
+        <!--adding the footer by using Grid container, adding the icons and the text, as well as the button-->
+        <footer>
+          <div class="grid-container2">
+           <h1 id="Hleftside">Contacts</h1> 
+            <img id="icon1" src="..//Coding/images1/icon 1.png" alt="email"> <p id="text1">travel.together@gmail.com</p>
+            <img id="icon2" src="..//Coding/images1/icon 2.png" alt="phone"> <p id="text2">+45 32219030</p>
+            <img id="icon3" src="..//Coding/images1/icon 3.png" alt="address"> <p id="text3">Stennehoj Alle 72 </p>
+            <img id="icon4" src="..//Coding/images1/icon 4.png" alt="workinghours"> <p id="text4">9:00-15:00</p>
+            
+            <img id="logofooter" src="..//Coding/images1/Logo.png" alt="Logo">
+
+            <!--I did not connect this button because it was affecting the CSS style-->
+            <button id="contactus" style="padding: -20px -23px;" > CONTACT US</button>
+
+            <h1 id="Hrightside">Follow Us on <br> Social media </h1>
+
+            <img id="icon5" src="..//Coding/images1/icon 5.png" alt="facebook">
+            <img id="icon6" src="..//Coding/images1/icon 6.png" alt="instagram">
+            <img id="icon7" src="..//Coding/images1/icon 7.png" alt="twitter">
+          </div>
+        </footer>
+        <!--linking the page to JS-->
+    <script src="homepage.js"></script>
+</body>
+</html>

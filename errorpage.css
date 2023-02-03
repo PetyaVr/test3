@@ -1,0 +1,202 @@
+body,html {
+    background-image: url(".//images1/error\ page\ background.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 430px) {
+    body,html {
+    background-image: url(".//images1/error\ backrground\ mobile.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+} 
+
+header img {
+    height: 200px;
+    margin-top: -60px;
+    margin-left: -15px;
+    align-items: center;
+    position: fixed;
+}
+
+@media only screen and (max-width: 430px) {
+    header img {
+        height: 200px;
+        margin-top: -60px;
+        margin-left: -15px;
+        align-items: center;
+        position: fixed;
+    }    
+}
+
+.switch {
+    position: fixed;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 1350px;
+  }
+  
+  .switch > span {
+    position: absolute;
+    top: 14px;
+    pointer-events: none;
+    font-family: Myanmar Text;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+    width: 50%;
+    text-align: center;
+  }
+  
+  input.check-toggle-round-flat:checked ~ .off {
+    color: black;
+    opacity: 70%;
+  }
+  
+  input.check-toggle-round-flat:checked ~ .on {
+    color: #fff;
+  }
+  
+  .switch > span.on {
+    left: 0;
+    padding-left: 2px;
+    color: black;
+    opacity: 70%;
+  }
+  
+  .switch > span.off {
+    right: 0;
+    padding-right: 4px;
+    color: #fff;
+  }
+  
+  .check-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  .check-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  input.check-toggle-round-flat + label {
+    padding: 5px;
+    width: 100px;
+    height: 45px;
+    background-color: white;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+  }
+  input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+  }
+  
+  input.check-toggle-round-flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #A6CDF7;
+    
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+  }
+  input.check-toggle-round-flat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 58px;
+    background-color: white;
+    -webkit-border-radius: 52px;
+    -moz-border-radius: 52px;
+    -ms-border-radius: 52px;
+    -o-border-radius: 52px;
+    border-radius: 52px;
+    -webkit-transition: margin 0.2s;
+    -moz-transition: margin 0.2s;
+    -o-transition: margin 0.2s;
+    transition: margin 0.2s;
+  }
+  
+  input.check-toggle-round-flat:checked + label:after {
+    margin-left: 44px;
+  }
+
+#heading {
+position: absolute;
+right: 0;
+margin-top: 450px;
+margin-right: 60px;
+
+font-family: Elephant;
+font-weight: 100;
+font-size: 200px;
+
+color: rgb(0, 0, 0);
+mix-blend-mode: soft-light;
+}
+
+
+@media only screen and (max-width: 430px) {
+    #heading {
+        position: absolute;
+        right: 0;
+        margin-top: 450px;
+        margin-right: 60px;
+        
+        font-family: Elephant;
+        font-weight: 100;
+        font-size: 100px;
+        
+        color: rgb(0, 0, 0);
+        mix-blend-mode: soft-light;
+        }
+}
+
+p {
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 150px;
+
+    font-family: Microsoft Yi Baiti;
+    font-size: 40px;
+    text-align: center;
+}
+
+button {
+    border-style: initial;
+    border: solid 4px;
+    border-color: white;
+    
+    background-color: #DDE2E8;
+    
+    font-family: Microsoft Himalaya;
+    font-size: 50px;
+
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 680px;    
+}
